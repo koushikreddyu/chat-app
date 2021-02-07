@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.chart-container {
+  width: 60%;
+  height: 400px;
+  border: 1px solid #949494;
+  background: #ffffff;
+  position: relative;
+}
+
+.message-container {
+  width: 100%;
+  height: 85%;
+  background: #ffffff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.full-container {
+  height: 100% !important;
+}
+
+.message-container::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.message-container::-webkit-scrollbar-thumb
+{
+	background-color: #d8d8d8;
+}
+
+.message {
+  background: #c7c7c7;
+  padding: 5px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: #282c34;
+  max-width: 70%;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+  display: flex;
+  text-align: left;
+}
+
+.avatar {
+  border: 1px solid #0c0c0c;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  overflow:hidden;
+}
+
+.message .avatar img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50px;
+}
+
+.message .message-placeholder {
+  overflow-wrap: break-word;
+  width: calc(100% - 60px);
+}
+
+.timestamp {
+  width: 100%;
+  flex-direction: column;
+  font-size: 10px;
+  color: #282c34;
+  text-align: left;
+  display: flex;
+  margin-left: 5px;
+}
+
+.input-container {
+  width: calc(100% - 5px);
+  height: 12%;
+  background: #e2e2e2;
+  text-align: left;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  padding: 2px;
+}
+
+.chat-input{
+  width: 85%;
+  border: none;
+  background: #ffffff;
+  color: #0c0c0c;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  height: calc(100% - 10px);
+  padding: 5px;
+  outline: none;
+}
+
+.chat-send {
+  width: 10%;
+  border-radius: 32px;
+  background: #a8a8a8;
+  color: #282c34;
+  height: calc(100% - 10px);
+  padding: 5px;
+  border: 0px;
+  align-self: flex-end;
+  right: 0;
+  position: absolute;
+  margin: 5px auto;
+}
+
+.chat-send:focus, .chat-send:active  {
+  outline: none
+}
+
+.chat-send:hover {
+  background: #cccccc;
+  cursor: pointer;
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid #a8a8a8;
+  margin: 5px;
+}
+
+.image-container:hover {
+  cursor: pointer;
+}
+
+.image-container .rounded-image {
+  width: inherit;
+  height: inherit;
+  border-radius: 50px;
+}
